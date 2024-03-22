@@ -15,9 +15,11 @@ export class Task {
      @Column({nullable: true})
      @Field({nullable: true})
      description:string
-
+     @Field(type => Date, {nullable: true})
+     @Column({nullable: true})
      dueDate: Date
-     
+     @Field({nullable: true})
+     @Column({nullable: true})
      status:string
 
 }
