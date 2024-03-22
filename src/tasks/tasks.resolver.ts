@@ -6,8 +6,6 @@ import { TasksService } from './tasks.service';
 export class TasksResolver {
 
 constructor(private taskService: TasksService) {}
-
-
 @Query(returns=>[Task])
 tasks(): Promise<Task[]>{
     return this.taskService.findAll();
